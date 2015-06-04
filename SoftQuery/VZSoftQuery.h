@@ -1,5 +1,5 @@
 //
-//  NSObject+VZSoftQuery.h
+//  VZSoftQuery.h
 //  SoftQuery
 //
 //  Created by Veight Zhou on 6/4/15.
@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-@class VZSoftQuery;
-@interface NSObject (VZSoftQuery)
 
-+ (instancetype)property;
+@interface VZSoftQuery : NSObject
 
-+ (void)printProperties;
++ (instancetype)query;
+
++ (instancetype)queryWithProperty:(id)property;
+
+
 
 @end

@@ -16,6 +16,8 @@
 		A6E443D11B203B9800BBF0C8 /* SoftQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E443D01B203B9800BBF0C8 /* SoftQueryTests.m */; };
 		A6E443DF1B203D1F00BBF0C8 /* NSObject+VZSoftQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E443DE1B203D1F00BBF0C8 /* NSObject+VZSoftQuery.m */; };
 		A6E443E21B203D6300BBF0C8 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E443E11B203D6300BBF0C8 /* TestObject.m */; };
+		A6E443E61B20438B00BBF0C8 /* VZSoftQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E443E51B20438B00BBF0C8 /* VZSoftQuery.m */; };
+		A6E443E91B20829400BBF0C8 /* VZSoftQueryClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E443E81B20829400BBF0C8 /* VZSoftQueryClassProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		A6E443DE1B203D1F00BBF0C8 /* NSObject+VZSoftQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VZSoftQuery.m"; sourceTree = "<group>"; };
 		A6E443E01B203D6300BBF0C8 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		A6E443E11B203D6300BBF0C8 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		A6E443E41B20438B00BBF0C8 /* VZSoftQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZSoftQuery.h; sourceTree = "<group>"; };
+		A6E443E51B20438B00BBF0C8 /* VZSoftQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZSoftQuery.m; sourceTree = "<group>"; };
+		A6E443E71B20829400BBF0C8 /* VZSoftQueryClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VZSoftQueryClassProperty.h; sourceTree = "<group>"; };
+		A6E443E81B20829400BBF0C8 /* VZSoftQueryClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VZSoftQueryClassProperty.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +137,22 @@
 		A6E443E31B203DB700BBF0C8 /* VZSoftQuery */ = {
 			isa = PBXGroup;
 			children = (
+				A6E443E41B20438B00BBF0C8 /* VZSoftQuery.h */,
+				A6E443E51B20438B00BBF0C8 /* VZSoftQuery.m */,
 				A6E443DD1B203D1E00BBF0C8 /* NSObject+VZSoftQuery.h */,
 				A6E443DE1B203D1F00BBF0C8 /* NSObject+VZSoftQuery.m */,
+				A6E443EA1B20829A00BBF0C8 /* property store */,
 			);
 			name = VZSoftQuery;
+			sourceTree = "<group>";
+		};
+		A6E443EA1B20829A00BBF0C8 /* property store */ = {
+			isa = PBXGroup;
+			children = (
+				A6E443E71B20829400BBF0C8 /* VZSoftQueryClassProperty.h */,
+				A6E443E81B20829400BBF0C8 /* VZSoftQueryClassProperty.m */,
+			);
+			name = "property store";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E443E91B20829400BBF0C8 /* VZSoftQueryClassProperty.m in Sources */,
 				A6E443BD1B203B9800BBF0C8 /* ViewController.m in Sources */,
 				A6E443BA1B203B9800BBF0C8 /* AppDelegate.m in Sources */,
+				A6E443E61B20438B00BBF0C8 /* VZSoftQuery.m in Sources */,
 				A6E443E21B203D6300BBF0C8 /* TestObject.m in Sources */,
 				A6E443DF1B203D1F00BBF0C8 /* NSObject+VZSoftQuery.m in Sources */,
 				A6E443B71B203B9800BBF0C8 /* main.m in Sources */,

@@ -10,8 +10,6 @@
 
 @implementation TestObject
 
-- (void)configure {
-    
-}
+
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "VZSoftQuery.h"
 @interface ViewController ()
 
 @end
@@ -16,8 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    id testObject = [TestObject property].testArray;
-    [TestObject printProperties];
+//    id testObject = [TestObject property].testArray;
+//    [TestObject printProperties];
+//    NSLog(@"%@", propertyKeyPath([TestObject property].testArray));
+//    [VZSoftQuery queryWithProperty:[TestObject property].testArray];
+    VZSoftQuery *query = VSQ(TestObject.property.testArray);
+    NSLog(@"query property name: %@", query.propertyName);
 }
 
 - (void)didReceiveMemoryWarning {

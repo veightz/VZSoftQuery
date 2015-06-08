@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 Veight Zhou. All rights reserved.
 //
 
+//#define propertyKeyPath(property) (@""#property)
+//#define propertyKeyPathLastComponent(property) [[(@""#property) componentsSeparatedByString:@"."] lastObject]
+
 #import <Foundation/Foundation.h>
 @class VZSoftQuery;
 @interface NSObject (VZSoftQuery)

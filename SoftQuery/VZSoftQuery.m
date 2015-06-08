@@ -10,15 +10,29 @@
 #import "NSObject+VZSoftQuery.h"
 #import <objc/runtime.h>
 
+@interface VZSoftQuery ()
+
+
+@end
+
 @implementation VZSoftQuery
 
 + (instancetype)query {
     return nil;
 }
 //
-//+ (instancetype)queryWithProperty:(id)property {
-//    NSString *propertyName = [self propertyName:property];
-//}
++ (instancetype)queryWithPropertyName:(NSString *)property {
+    VZSoftQuery *query = [[VZSoftQuery alloc] initWithPropertyName:property];
+    return query;
+}
+
+- (instancetype)initWithPropertyName:(NSString *)property {
+    self = [super init];
+    if (self) {
+        _propertyName = [property copy];
+    }
+    return self;
+}
 //
 //+ (NSString)propertyName:(id)property {
 //

@@ -8,6 +8,7 @@
 
 #import "NSObject+VZSoftQuery.h"
 #import "VZSoftQuery.h"
+#import "VZSoftQueryClassProperty.h"
 
 #import <objc/runtime.h>
 
@@ -26,15 +27,18 @@
     unsigned int propertyCount = 0;
     objc_property_t *properties = class_copyPropertyList([self class], &propertyCount);
     
-    objc_property_t pro = class_getProperty([self class], "testString");
-    
-    NSMutableArray *propertyNameArray = [@[] mutableCopy];
-    
+    //
+    NSMutableArray *classPropertyArray = [@[] mutableCopy];
     for (unsigned int i = 0; i < propertyCount; i++) {
         objc_property_t property = properties[i];
         const char *propertyName = property_getName(property);
-        
+        VZSoftQueryClassProperty *classProperty = [VZSoftQueryClassProperty new];
+        [classProperty setObjcProperty:property];
+        [classProperty setPropertyName:@(propertyName)];
+        [classPropertyArray addObject:classPropertyArray];
     }
+    
+    
     
     
 }
